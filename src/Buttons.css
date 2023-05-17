@@ -1,0 +1,24 @@
+.menu {
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+button {
+    width: fit-content;
+    height: fit-content;
+    font-size: 22px;
+    margin: 5px;
+}
+
+.apply-button {
+    display: block;
+    margin: 5px auto;
+}
+
+input {
+    text-align: center;
+    width: 40%;
+    max-width: 150px;
+    font-size: 22px;
+}
