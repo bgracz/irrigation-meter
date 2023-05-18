@@ -1,5 +1,7 @@
-body {
+html {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(70,147,196);
+  background: radial-gradient(circle, rgba(70,147,196,1) 0%, rgba(35,114,164,1) 42%);
 }
