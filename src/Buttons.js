@@ -10,8 +10,14 @@ function Buttons() {
     let todayIs = new Date().getFullYear() + "/" + (new Date().getMonth() + 1) + "/" + new Date().getDate();
 
     useEffect(() => {
-        setDailyTotal(localStorage.getItem(todayIs));
-    }, []);
+        const storedTotal = localStorage.getItem(todayIs);
+        if (storedTotal === null || storedTotal === "false") {
+          localStorage.setItem(todayIs, "0");
+        } else {
+          setDailyTotal(parseInt(storedTotal));
+          console.log(dailyTotal);
+        }
+      }, [dailyTotal]);
 
     function minus() {
         setCurrentDrink(currentDrink - 5);
@@ -23,8 +29,8 @@ function Buttons() {
 
     function addDaily() {
         setDailyTotal(dailyTotal + currentDrink);
-        localStorage.setItem(todayIs, dailyTotal);
-        console.log(todayIs, dailyTotal);
+        localStorage.setItem(todayIs, dailyTotal + currentDrink);
+        console.log(todayIs, dailyTotal + currentDrink);
     };
 
     return (
