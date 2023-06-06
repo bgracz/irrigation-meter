@@ -5,8 +5,8 @@ import Bottle from './img/water-bottle.png';
 function App() {
   return (
     <div>
+      <h1 className='h2o'>H<sub>2</sub>O</h1>
       <div className="App">
-        <h1 className='h2o'>H<sub>2</sub>O</h1>
         <img src={Bottle} className="bottle-image" alt="bottle-top"></img>
       </div>
       <Buttons />

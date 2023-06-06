@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     text-align: center;
 }
 
@@ -9,19 +10,34 @@ html, body {
 }
 
 .h2o {
-    display: inline-block;
-    transform: rotate(270deg);
-    opacity: 0.1;
-    font-size: 160px;
+    position: absolute;
+    display: block;
+    opacity: 0.05;
+    font-size: 36vw;
     z-index: -100;
-    margin: 0;
+    width: 99%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
 }
 
 .bottle-image {
     display: inline-block;
     position: relative;
-    margin-left: -11%;
     width: 20%;
     min-width: 300px;
     z-index: 100;
+    animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+    0% {
+      transform: rotate(-1deg);
+    }
+    50% {
+      transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(-1deg);
+    }
   }
