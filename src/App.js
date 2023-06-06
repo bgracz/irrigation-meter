@@ -1,6 +1,7 @@
 import './App.css';
 import Buttons from './Buttons';
 import Bottle from './img/water-bottle.png';
+import LineChart from './Chart';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <img src={Bottle} className="bottle-image" alt="bottle-top"></img>
       </div>
       <Buttons />
+      <LineChart />
     </div>
   );
 }

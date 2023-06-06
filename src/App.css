@@ -1,6 +1,7 @@
 html,
 body {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .App {
@@ -19,6 +20,7 @@ body {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
+    font-weight: 100;
 }
 
 .bottle-image {
